@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Session Wrapper</h1>
+    <p class="lead">We have a problem with the way that we store drop down lists...</p>
+    <p>We made some design decisions at the start of the projects that may be causing us challenges now.</p>
+    <p>Primarily the issue that when we serialise a drop down list, we serialise THE DROP DOWN LIST.</p>
+    <p>That is to say we store :</p>
+    <ul>
+        <li>The Selected option Text.</li>
+        <li>The Selected option Id.</li>
+        <li>All of the options that are available in the list that we DIDN'T pick</li>
+    </ul>
+    <p>This probably isn't the most efficient way of storing it :)</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
