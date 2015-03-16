@@ -18,7 +18,11 @@ namespace SessionWrapper.Controllers
         [HttpPost]
         public ActionResult Index(Person p)
         {
+
+             
+
             Session["Person"] = p;
+
             return RedirectToAction("Retrieve");
         }
 

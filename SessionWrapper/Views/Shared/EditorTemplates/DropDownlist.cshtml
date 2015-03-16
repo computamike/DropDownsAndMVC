@@ -1,0 +1,6 @@
+﻿@using System.Activities.Statements
+@using OpenGI.MVC.Core
+@model dynamic
+
+@Html.DropDownList("Selected", new List<SelectListItem>(SerializableSelectlistItem.Convert(Model.Items)), OpenGI.Resources.iMarket.iMarketResources.DropDownDefaultOption, new { @class = "requireddropdown" })
+@Html.ValidationMessage("Selected")

@@ -32,11 +32,10 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Powers, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Powers.SelectedPower , htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                
-                @Html.DropDownListFor(model => model.Powers,Model.Powers.Powers)
-                
+             @*@Html.DropDownListFor(model => model.Powers.SelectedPower ,Model.Powers.Powers)*@
+             @Html.DropDownListFor(m=> m.Powers  , new SelectList(Model.Powers.Powers, "Value", "Text",null))
               
             </div>
         </div>

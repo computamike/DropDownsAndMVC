@@ -1,0 +1,3 @@
+﻿@model SessionWrapper.Models.HeroPowers
+**@Html.DropDownList("Selected", new List<SelectListItem>(Model.Powers ), "hihi", new { @class = "requireddropdown" })
+@Html.ValidationMessage("Selected")
